@@ -14,11 +14,13 @@
 
 **Identifiserte entiteter:**
 
-[Skriv ditt svar her - list opp alle entitetene du har identifisert]
+Kunder, utleid og sykkel 
 
 **Attributter for hver entitet:**
 
-[Skriv ditt svar her - list opp attributtene for hver entitet]
+utlevert, levert, sted, tidsintervall, NULL, mobilnummer, epost, fornavn og etternavn.
+
+
 
 ---
 
@@ -26,11 +28,18 @@
 
 **Valgte datatyper og begrunnelser:**
 
-[Skriv ditt svar her - forklar hvilke datatyper du har valgt for hver attributt og hvorfor]
+INTEGER fordi det brukes for å lagre kundeID i systemet
+
+VARCHAR for å lagre etternavn, fornavn, epost osv
+
+DATETIME som skal telle hvor lenge med tidsintervall når sykkelen blir utlevert og levert 
+
 
 **`CHECK`-constraints:**
 
 [Skriv ditt svar her - list opp alle CHECK-constraints du har lagt til og forklar hvorfor de er nødvendige]
+
+
 
 **ER-diagram:**
 
