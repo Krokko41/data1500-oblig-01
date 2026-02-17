@@ -37,7 +37,9 @@ DATETIME som skal telle hvor lenge med tidsintervall når sykkelen blir utlevert
 
 **`CHECK`-constraints:**
 
-[Skriv ditt svar her - list opp alle CHECK-constraints du har lagt til og forklar hvorfor de er nødvendige]
+Leiebeløp >= 0 for å sjekke at verdien ikke blir mindre enn 0 
+
+KundeID int NOT NULL, for å sjekke om kunden kan bruke sykkelen bare hvis de er logget inn
 
 
 
