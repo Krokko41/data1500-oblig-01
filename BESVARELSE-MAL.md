@@ -47,6 +47,36 @@ KundeID int NOT NULL, for å sjekke om kunden kan bruke sykkelen bare hvis de er
 
 [Legg inn mermaid-kode eller eventuelt en bildefil fra `mermaid.live` her]
 
+erDiagram
+    KUNDE ||--o{ UTLEIE : ""
+    SYKKEL ||--o{ UTLEIE : ""
+    STASJON ||--|{ SYKKEL : ""
+    
+    KUNDE {
+        int KundeID
+        string Fullenavn
+        string Mobilnr
+    }
+
+    SYKKEL {
+        int SykkelID
+        string Ledig
+        string Ikke-ledig
+    }
+
+    STASJON {
+        int Stasjonsnavn
+    }
+
+    UTLEIE {
+        int UtleieID
+        int KundeID
+        int SykkelID
+        int NULL
+        datetime Start
+        datetime Slutt
+    }
+
 ---
 
 ### Oppgave 1.3: Primærnøkler
