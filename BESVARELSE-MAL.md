@@ -14,7 +14,7 @@
 
 **Identifiserte entiteter:**
 
-Kunder, utleid og sykkel 
+Kunder, utleid, sykkel og stasjon
 
 **Attributter for hver entitet:**
 
