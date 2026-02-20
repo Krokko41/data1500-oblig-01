@@ -56,6 +56,7 @@ erDiagram
         int KundeID
         string Fullenavn
         string Mobilnr
+        string E-post
     }
 
     SYKKEL {
@@ -90,6 +91,8 @@ jeg hadde valgt primærnøkler i IDer som kundeID, sykkelID og stasjonsID for å
 **Naturlige vs. surrogatnøkler:**
 
 [Skriv ditt svar her - diskuter om du har brukt naturlige eller surrogatnøkler og hvorfor]
+
+jeg hadde brukt surrugatnøkler for KundeID og sykkelID osv istedetfor naturligenøkler for å lagre en unik verdi i databasen mens naturlige nøkler som e-post og telefonnr som en kunde bruker kan også brukes i forskjellige databaser. 
 
 **Oppdatert ER-diagram:**
 
