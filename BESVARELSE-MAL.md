@@ -85,6 +85,8 @@ erDiagram
 
 [Skriv ditt svar her - forklar hvilke primærnøkler du har valgt for hver entitet og hvorfor]
 
+jeg hadde valgt primærnøkler i IDer som kundeID, sykkelID og stasjonsID for å finne unike indikatorer for hver rad i databasen
+
 **Naturlige vs. surrogatnøkler:**
 
 [Skriv ditt svar her - diskuter om du har brukt naturlige eller surrogatnøkler og hvorfor]
