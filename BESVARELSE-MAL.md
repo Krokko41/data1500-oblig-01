@@ -140,7 +140,9 @@ Kunde-utleie,sykkel-utleie og stasjon-sykkel. Alle de tre forholdene har kardina
 
 **Fremmednøkler:**
 
+KundeID fra kundetabellen til KundeID i utleie tabellen og SykkelID i utleie tablellen til SykkelID i Sykkel tabellen. 
 
+De implementerer forholdene med at man får kontroll hvilken kunde og hvilken sykkel brukes mellom forskjellige tabeller
 
 [Skriv ditt svar her - list opp alle fremmednøklene og forklar hvordan de implementerer forholdene]
 
