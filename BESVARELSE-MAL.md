@@ -104,23 +104,23 @@ erDiagram
     STASJON ||--|{ SYKKEL : ""
 
     KUNDE {
-        int KundeID PK "Surrogatnøkkel"
+        int KundeID PN "Surrogatnøkkel"
         string Fullenavn
         string Mobilnr
     }
 
     SYKKEL {
-        int SykkelID PK "Surrogatnøkkel"
+        int SykkelID PN "Surrogatnøkkel"
         string Ledig
         string Ikke-ledig
     }
 
     STASJON {
-        int Stasjonsnavn PK "surrogatnøkkel"
+        int Stasjonsnavn PN "surrogatnøkkel"
     }
 
     UTLEIE {
-        int UtleieID PK "Surrogatnøkkel"
+        int UtleieID PN "Surrogatnøkkel"
         int KundeID
         int SykkelID
         int NULL
@@ -139,6 +139,8 @@ erDiagram
 Kunde-utleie,sykkel-utleie og stasjon-sykkel. Alle de tre forholdene har kardinalitet 1:N
 
 **Fremmednøkler:**
+
+
 
 [Skriv ditt svar her - list opp alle fremmednøklene og forklar hvordan de implementerer forholdene]
 
