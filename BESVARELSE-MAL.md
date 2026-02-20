@@ -136,9 +136,13 @@ erDiagram
 
 [Skriv ditt svar her - list opp alle forholdene mellom entitetene og angi kardinalitet]
 
+Kunde-utleie,sykkel-utleie og stasjon-sykkel. Alle de tre forholdene har kardinalitet 1:N
+
 **Fremmednøkler:**
 
 [Skriv ditt svar her - list opp alle fremmednøklene og forklar hvordan de implementerer forholdene]
+
+
 
 **Oppdatert ER-diagram:**
 
