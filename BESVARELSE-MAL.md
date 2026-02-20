@@ -147,10 +147,34 @@ De implementerer forholdene med at man får kontroll hvilken kunde og hvilken sy
 [Skriv ditt svar her - list opp alle fremmednøklene og forklar hvordan de implementerer forholdene]
 
 
-
 **Oppdatert ER-diagram:**
 
-[Legg inn mermaid-kode eller eventuelt en bildefil fra `mermaid.live` her]
+erDiagram Kunde ||--o{ Utleie : "" Sykkel ||--o{ Utleie : "" Stasjon ||--|{ Sykkel : ""
+
+Kunde {
+    int KundeID PK "Surrogatnøkkel og forhold til utleie tabellen"
+    string Fullenavn
+    string Mobilnr
+}
+
+Sykkel {
+    int SykkelID PK "Surrogatnøkkel og forhold til utleie tabellen"
+    string Ledig
+    string Ikke-ledig
+}
+
+Stasjon {
+    int Stasjonsnavn PK "surrogatnøkkel"
+}
+
+Utleie {
+    int UtleieID PK "Surrogatnøkkel"
+    int KundeID "forhold til kunde tabellen"
+    int SykkelID "forhold til sykkeln tabellen"
+    int NULL
+    datetime Start
+    datetime Slutt
+}
 
 ---
 
