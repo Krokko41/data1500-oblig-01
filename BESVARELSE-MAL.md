@@ -98,6 +98,36 @@ jeg hadde brukt surrugatnøkler for KundeID og sykkelID osv istedetfor naturlige
 
 [Legg inn mermaid-kode eller eventuelt en bildefil fra `mermaid.live` her]
 
+erDiagram
+    KUNDE ||--o{ UTLEIE : ""
+    SYKKEL ||--o{ UTLEIE : ""
+    STASJON ||--|{ SYKKEL : ""
+
+    KUNDE {
+        int KundeID PK "Surrogatnøkkel"
+        string Fullenavn
+        string Mobilnr
+    }
+
+    SYKKEL {
+        int SykkelID PK "Surrogatnøkkel"
+        string Ledig
+        string Ikke-ledig
+    }
+
+    STASJON {
+        int Stasjonsnavn PK "surrogatnøkkel"
+    }
+
+    UTLEIE {
+        int UtleieID PK "Surrogatnøkkel"
+        int KundeID
+        int SykkelID
+        int NULL
+        datetime Start
+        datetime Slutt
+    }
+
 ---
 
 ### Oppgave 1.4: Forhold og fremmednøkler
