@@ -104,23 +104,23 @@ erDiagram
     STASJON ||--|{ SYKKEL : ""
 
     KUNDE {
-        int KundeID PN "Surrogatnøkkel"
+        int KundeID PK "Surrogatnøkkel"
         string Fullenavn
         string Mobilnr
     }
 
     SYKKEL {
-        int SykkelID PN "Surrogatnøkkel"
+        int SykkelID PK "Surrogatnøkkel"
         string Ledig
         string Ikke-ledig
     }
 
     STASJON {
-        int Stasjonsnavn PN "surrogatnøkkel"
+        int Stasjonsnavn PK "surrogatnøkkel"
     }
 
     UTLEIE {
-        int UtleieID PN "Surrogatnøkkel"
+        int UtleieID PK "Surrogatnøkkel"
         int KundeID
         int SykkelID
         int NULL
