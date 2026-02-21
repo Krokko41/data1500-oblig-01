@@ -184,6 +184,8 @@ Utleie {
 
 [Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 1NF og hvorfor]
 
+Ja 1NF datamobellen min tilfredsstiller 1NF fordi hver celle i tabellene er det bare én enkelt verdi. Det gjør at hver rad kan bli identifisert unikt med bruk av en primærnøkkel.
+
 **Vurdering av 2. normalform (2NF):**
 
 [Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 2NF og hvorfor]
