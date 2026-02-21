@@ -188,11 +188,19 @@ Ja 1NF datamobellen min tilfredsstiller 1NF fordi hver celle i tabellene er det 
 
 **Vurdering av 2. normalform (2NF):**
 
+For at datamodellen min tilfreddstiller 2NF må den først funke med 1NF og alle dataene i tabellen må være knyttet til hele primærnøklene. Det fyller kravene som datamodellen min har med å være avhengig av hele primærnøklene. 
+
 [Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 2NF og hvorfor]
 
 **Vurdering av 3. normalform (3NF):**
 
+Datamobellen min tilfredstiller også 3NF fordi den også funker med 2NF og fordi den ikke har noe transitive avhengigheter. Transitive avhengigheter betyr at alle felt i tabellen er avhengige av primærnøkkelen og ikke av andre kolonner. 
+
 [Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 3NF og hvorfor]
+
+
+
+
 
 **Eventuelle justeringer:**
 
