@@ -45,7 +45,7 @@ KundeID int NOT NULL, for å sjekke om kunden kan bruke sykkelen bare hvis de er
 
 **ER-diagram:**
 
-[Legg inn mermaid-kode eller eventuelt en bildefil fra `mermaid.live` her]
+
 
 erDiagram
     KUNDE ||--o{ UTLEIE : ""
@@ -84,19 +84,16 @@ erDiagram
 
 **Valgte primærnøkler og begrunnelser:**
 
-[Skriv ditt svar her - forklar hvilke primærnøkler du har valgt for hver entitet og hvorfor]
 
 jeg hadde valgt primærnøkler i IDer som kundeID, sykkelID og stasjonsID for å finne unike indikatorer for hver rad i databasen
 
 **Naturlige vs. surrogatnøkler:**
 
-[Skriv ditt svar her - diskuter om du har brukt naturlige eller surrogatnøkler og hvorfor]
+
 
 jeg hadde brukt surrugatnøkler for KundeID og sykkelID osv istedetfor naturligenøkler for å lagre en unik verdi i databasen mens naturlige nøkler som e-post og telefonnr som en kunde bruker kan også brukes i forskjellige databaser. 
 
 **Oppdatert ER-diagram:**
-
-[Legg inn mermaid-kode eller eventuelt en bildefil fra `mermaid.live` her]
 
 erDiagram
     KUNDE ||--o{ UTLEIE : ""
@@ -134,8 +131,6 @@ erDiagram
 
 **Identifiserte forhold og kardinalitet:**
 
-[Skriv ditt svar her - list opp alle forholdene mellom entitetene og angi kardinalitet]
-
 Kunde-utleie,sykkel-utleie og stasjon-sykkel. Alle de tre forholdene har kardinalitet 1:N
 
 **Fremmednøkler:**
@@ -144,7 +139,7 @@ KundeID fra kundetabellen til KundeID i utleie tabellen og SykkelID i utleie tab
 
 De implementerer forholdene med at man får kontroll hvilken kunde og hvilken sykkel brukes mellom forskjellige tabeller
 
-[Skriv ditt svar her - list opp alle fremmednøklene og forklar hvordan de implementerer forholdene]
+
 
 
 **Oppdatert ER-diagram:**
@@ -182,7 +177,6 @@ Utleie {
 
 **Vurdering av 1. normalform (1NF):**
 
-[Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 1NF og hvorfor]
 
 Ja 1NF datamobellen min tilfredsstiller 1NF fordi hver celle i tabellene er det bare én enkelt verdi. Det gjør at hver rad kan bli identifisert unikt med bruk av en primærnøkkel.
 
@@ -190,23 +184,16 @@ Ja 1NF datamobellen min tilfredsstiller 1NF fordi hver celle i tabellene er det 
 
 For at datamodellen min tilfreddstiller 2NF må den først funke med 1NF og alle dataene i tabellen må være knyttet til hele primærnøklene. Det fyller kravene som datamodellen min har med å være avhengig av hele primærnøklene. 
 
-[Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 2NF og hvorfor]
+
 
 **Vurdering av 3. normalform (3NF):**
 
 Datamobellen min tilfredstiller også 3NF fordi den også funker med 2NF og fordi den ikke har noe transitive avhengigheter. Transitive avhengigheter betyr at alle felt i tabellen er avhengige av primærnøkkelen og ikke av andre kolonner. 
 
-[Skriv ditt svar her - forklar om datamodellen din tilfredsstiller 3NF og hvorfor]
-
-
-
 
 
 **Eventuelle justeringer:**
 
-[Skriv ditt svar her - hvis modellen ikke var på 3NF, forklar hvilke justeringer du har gjort]
-
----
 
 ## Del 2: Database-implementering
 
