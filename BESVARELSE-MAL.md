@@ -237,6 +237,7 @@ ORDER BY table_name;
 ```
 [Skriv resultatet av spørringen her - list opp alle tabellene som ble opprettet]
 ```
+Alle tabellene som ble oppretter var Kunde, Sykkel lås, stasjon, utleie og STATUS.
 
 ---
 
