@@ -3,6 +3,14 @@
 -- Initialiserings-skript for PostgreSQL
 -- ============================================================================
 
+DROP TABLE IF EXISTS utleie;
+DROP TABLE IF EXISTS laas;
+DROP TABLE IF EXISTS sykkel;
+DROP TABLE IF EXISTS kunde;
+DROP TABLE IF EXISTS stasjon;
+DROP USER IF EXISTS kunde_1;
+DROP ROLE IF EXISTS kunde_rolle;
+
 -- 1. OPPRETT TABELLER
 CREATE TABLE stasjon (
     navn TEXT PRIMARY KEY
@@ -33,11 +41,8 @@ CREATE TABLE utleie (
 );
 
 -- 2. SETT INN TESTDATA 
-
-
 INSERT INTO stasjon (navn) VALUES 
 ('Oslo'), ('Bergen'), ('Stavanger'), ('Trondheim'), ('Tromsø');
-
 
 INSERT INTO kunde (navn, mobil) VALUES 
 ('Kunde_1', '94011522'),
@@ -46,10 +51,8 @@ INSERT INTO kunde (navn, mobil) VALUES
 ('Kunde_4', '452332341'),
 ('Kunde_5', '91929394');
 
-
 INSERT INTO sykkel (status)
 SELECT 'Ledig' FROM generate_series(1, 100);
-
 
 INSERT INTO laas (stasjon_navn, sykkel_id)
 SELECT 'Oslo', generate_series(1, 20) UNION ALL
@@ -58,28 +61,31 @@ SELECT 'Stavanger', generate_series(41, 60) UNION ALL
 SELECT 'Trondheim', generate_series(61, 80) UNION ALL
 SELECT 'Tromsø', generate_series(81, 100);
 
-
 INSERT INTO utleie (kunde_id, sykkel_id)
 SELECT 
     floor(random() * 5 + 1)::int, 
     floor(random() * 100 + 1)::int
 FROM generate_series(1, 50);
 
--- 3. DBA SETNINGER (Enkel tilgangskontroll)
+-- 3. DBA SETNINGER
 CREATE ROLE kunde_rolle;
 GRANT SELECT ON stasjon, sykkel, laas TO kunde_rolle;
 CREATE USER kunde_1 WITH PASSWORD 'kunde123';
 GRANT kunde_rolle TO kunde_1;
 
--- 4. INDEKSER (For ytelse)
+-- 4. INDEKSER (for ytelse)
 CREATE INDEX idx_kunde_mobil ON kunde(mobil);
 
 
-SELECT table_name 
-FROM information_schema.tables 
-WHERE table_schema = 'public' 
-AND table_type = 'BASE TABLE';
+SELECT 'Tabell: kunde' AS beskrivelse, COUNT(*)::TEXT AS verdi FROM kunde
+UNION ALL
+SELECT 'Tabell: sykkel', COUNT(*)::TEXT FROM sykkel
+UNION ALL
+SELECT 'Tabell: lås', COUNT(*)::TEXT FROM laas
+UNION ALL
+SELECT 'Tabell: stasjon', COUNT(*)::TEXT FROM stasjon
+UNION ALL
+SELECT 'Tabell: utleie', COUNT(*)::TEXT FROM utleie
+UNION ALL
+SELECT 'STATUS', 'Database initialisert!';
 
-
--- Vis at initialisering er fullført (kan se i loggen fra "docker-compose log"
-SELECT 'Database initialisert!' as status;
