@@ -77,6 +77,12 @@ GRANT kunde_rolle TO kunde_1;
 CREATE INDEX idx_kunde_mobil ON kunde(mobil);
 
 
+SELECT table_name 
+FROM information_schema.tables 
+WHERE table_schema = 'public' 
+  AND table_type = 'BASE TABLE'
+ORDER BY table_name;
+
 SELECT 'Tabell: kunde' AS beskrivelse, COUNT(*)::TEXT AS verdi FROM kunde
 UNION ALL
 SELECT 'Tabell: sykkel', COUNT(*)::TEXT FROM sykkel
@@ -87,5 +93,6 @@ SELECT 'Tabell: stasjon', COUNT(*)::TEXT FROM stasjon
 UNION ALL
 SELECT 'Tabell: utleie', COUNT(*)::TEXT FROM utleie
 UNION ALL
-SELECT 'STATUS', 'Database initialisert!';
 
+
+SELECT 'STATUS', 'Database initialisert!';
