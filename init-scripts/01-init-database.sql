@@ -31,7 +31,7 @@ CREATE TABLE utleie (
 -- Sett inn testdata
 INSERT INTO stasjon (navn) VALUES ('Oslo S'), ('Aker Brygge');
 
-INSERT INTO kunde (mobil) VALUES ('90011222');
+INSERT INTO kunde (navn, mobil) VALUES ('Ola Nordmann', '90011222');
 
 INSERT INTO sykkel (status, stasjon_navn) VALUES ('Ledig', 'Oslo S');
 
