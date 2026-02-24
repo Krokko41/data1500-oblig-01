@@ -234,9 +234,7 @@ ORDER BY table_name;
 
 **Resultat:**
 
-```
-[Skriv resultatet av spørringen her - list opp alle tabellene som ble opprettet]
-```
+
 Alle tabellene som ble oppretter var Kunde, Sykkel lås, stasjon, utleie og STATUS.
 
 ---
@@ -247,15 +245,14 @@ Alle tabellene som ble oppretter var Kunde, Sykkel lås, stasjon, utleie og STAT
 
 **SQL for å opprette rolle:**
 
-```sql
-[Skriv din SQL-kode for å opprette rollen 'kunde' her]
-```
+CREATE ROLE kunde_rolle;
+CREATE ROLE admin_rolle;
 
 **SQL for å opprette bruker:**
 
-```sql
-[Skriv din SQL-kode for å opprette brukeren 'kunde_1' her]
-```
+Create User kunde_1;
+Grant kunde TO kunde_1;
+
 
 **SQL for å tildele rettigheter:**
 
