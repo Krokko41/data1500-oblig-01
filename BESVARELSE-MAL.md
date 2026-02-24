@@ -256,11 +256,10 @@ Grant kunde TO kunde_1;
 
 **SQL for å tildele rettigheter:**
 
-```sql
-[Skriv din SQL-kode for å tildele rettigheter til rollen her]
-```
+CREATE VIEW kunde_sykkel_visning AS 
+SELECT id, status FROM sykkel;
+GRANT SELECT ON kunde_sykkel_visning TO kunde;
 
----
 
 ### Oppgave 3.2: Begrenset visning for kunder
 
