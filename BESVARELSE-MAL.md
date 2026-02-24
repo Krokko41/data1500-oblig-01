@@ -219,6 +219,9 @@ Datamobellen min tilfredstiller også 3NF fordi den også funker med 2NF og ford
 
 [Skriv ditt svar her - f.eks. skjermbilder eller output fra terminalen som viser at databasen ble opprettet uten feil]
 
+<img width="577" height="330" alt="Skjermbilde 2026-02-24 kl  22 14 31" src="https://github.com/user-attachments/assets/f315fce7-17c8-4a3c-bbb5-f87de9261563" />
+
+
 **Spørring mot systemkatalogen:**
 
 ```sql
