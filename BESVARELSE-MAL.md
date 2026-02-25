@@ -293,7 +293,18 @@ En ulempe med å bruke VIEW sammenlignet med POLICIES er at når du bruker VIEW 
 
 **Totalt antall utleier per år:**
 
-[Skriv din utregning her]
+WITH sesong_data AS (
+    SELECT 'Høysesong' AS sesong, 20000 AS rate, 5 AS maaneder
+    UNION ALL
+    SELECT 'Mellomsesong', 5000 AS rate, 4 AS maander
+    UNION ALL
+    SELECT 'Lavsesong', 500 AS rate, 3 AS maander
+)
+SELECT 
+    SUM(rate * maaneder) AS totalt_per_aar
+FROM sesong_data;
+
+Det blir totalt 121500 antall utleier per år
 
 **Estimat for lagringskapasitet:**
 
