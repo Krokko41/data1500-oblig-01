@@ -265,6 +265,18 @@ GRANT SELECT ON kunde_sykkel_visning TO kunde;
 
 **SQL for VIEW:**
 
+CREATE OR REPLACE VIEW mine_utleier AS
+SELECT 
+utleie.id, 
+utleie.sykkel_id, 
+utleie.tid_start
+FROM utleie
+JOIN kunde ON utleie.kunde_id = kunde.id
+WHERE kunde.navn = current_user;
+
+-- Gi kunden tilgang til å se denne visningen
+GRANT SELECT ON mine_utleier TO kunde;
+
 ```sql
 [Skriv din SQL-kode for VIEW her]
 ```
