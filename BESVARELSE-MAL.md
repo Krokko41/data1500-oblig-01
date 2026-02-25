@@ -308,19 +308,19 @@ Det blir totalt 121500 antall utleier per år
 
 **Estimat for lagringskapasitet:**
 
-WITH sesong_data AS (
-    SELECT 'Høysesong' AS sesong, 20000 AS utleier, 5 AS maaneder
-    UNION ALL
-    SELECT 'Mellomsesong', 5000 AS utleier, 4 AS maaneder
-    UNION ALL
-    SELECT 'Lavsesong', 500 AS utleier, 3 AS maaneder
-)
-SELECT 
-    sesong,
+ WITH sesong_data AS (
+        SELECT 'Høysesong' AS sesong, 20000 AS utleier, 5 AS maaneder
+        UNION ALL
+        SELECT 'Mellomsesong', 5000 AS utleier, 4 AS maaneder
+        UNION ALL
+        SELECT 'Lavsesong', 500 AS utleier, 3 AS maaneder
+    )
+    SELECT 
+        sesong,
     (utleier * maaneder) AS lagringskapasitet
 FROM sesong_data;
 
-Den ganger sammen 
+Den ganger sammen utleier og månder for hvert sesong og vises på hver sin tabell summen av lagrigskapasitteten.
 [Skriv din utregning her - vis hvordan du har beregnet lagringskapasiteten for hver tabell]
 
 **Totalt for første år:**
