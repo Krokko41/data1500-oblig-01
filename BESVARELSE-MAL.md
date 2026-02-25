@@ -217,7 +217,6 @@ Datamobellen min tilfredstiller også 3NF fordi den også funker med 2NF og ford
 
 **Dokumentasjon av vellykket kjøring:**
 
-[Skriv ditt svar her - f.eks. skjermbilder eller output fra terminalen som viser at databasen ble opprettet uten feil]
 
 <img width="577" height="330" alt="Skjermbilde 2026-02-24 kl  22 14 31" src="https://github.com/user-attachments/assets/f315fce7-17c8-4a3c-bbb5-f87de9261563" />
 
@@ -323,7 +322,6 @@ Mitt estimat for første år etter vi har plusset alle tabellene sammen blir 4 3
 
 **Problem 1: Redundans**
 
-[Skriv ditt svar her - gi konkrete eksempler fra CSV-filen som viser redundans]
 
 Et eksempel som viser redundans er hvordan Ole Hansen utleier sykkel tre ganger men databasen forsatt lagrer E-post og mobilnr for hver gang han utleier en sykkel som tar unødvendig plass.
 
@@ -333,7 +331,6 @@ Siden databasen har lagret tre forskjellige mobilnr og E-post med Ole hansen og 
 
 **Problem 3: Oppdateringsanomalier**
 
-[Skriv ditt svar her - diskuter slette-, innsettings- og oppdateringsanomalier]
 
 Oppdateringsanomalier er problemer som oppstår når man forsøker å slette, endre og legge til data i en database. For eksempel med CSV-filen så vil å oppdatere E-posten til Ole Hansen lede til problemer når vi får forskjellige data for en person. Sletteanomalier oppstår når man skal slette data men ender opp med å slette annen informasjon som man vil beholde. Innsettningsanomalier kommer når man prøver å legge inn data men det oppstår feil fordi man mangler andre data som tabellen krever.
 
@@ -361,17 +358,24 @@ b+-tre brukes nesten i alle moderne datasystemer som holder dataene sortert i et
 
 **Foreslått datastruktur:**
 
-[Skriv ditt svar her - f.eks. heap-fil, LSM-tree, eller annen egnet datastruktur]
+
+
+Jeg hadde valgt heap-fil fordi det har en rask måte å logge ny data på hvor man sjeldent trenger å gjennomføre lese-operasjoner
+
+
 
 **Begrunnelse:**
 
 **Skrive-operasjoner:**
 
-[Skriv ditt svar her - forklar hvorfor datastrukturen er egnet for mange skrive-operasjoner]
+Heap-fil egner seg godt for mange skrive-operasjoner fordi den logger all ny data på slutten av tabellen hvor det er ledig plass. Det blir gjort på en enkel og effektivt måte hvor dataene trenger ikke sortering. 
+
+
 
 **Lese-operasjoner:**
 
-[Skriv ditt svar her - forklar hvordan datastrukturen håndterer sjeldne lese-operasjoner]
+Heap-fil er ikke ideelt for lese-operasjoner fordi hvis du skal finne en logg i databasen må den lese hele fila fra topp til bunn fordi dataene er ikke sortert. Det kan ta tid for operasjonen til å fullføres og bør brukes sjeldent. 
+
 
 ---
 
