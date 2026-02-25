@@ -325,13 +325,17 @@ Mitt estimat for første år etter vi har plusset alle tabellene sammen blir 4 3
 
 [Skriv ditt svar her - gi konkrete eksempler fra CSV-filen som viser redundans]
 
+Et eksempel som viser redundans er hvordan Ole Hansen utleier sykkel tre ganger men databasen forsatt lagrer E-post og mobilnr for hver gang han utleier en sykkel som tar unødvendig plass.
+
 **Problem 2: Inkonsistens**
 
-[Skriv ditt svar her - forklar hvordan redundans kan føre til inkonsistens med eksempler]
+Siden databasen har lagret tre forskjellige mobilnr og E-post med Ole hansen og han skulle velge å bytte enten mobilnr eller e-post vil det oppgstå en inkonsistens når personlig data er forskjellig hos samme kunde. 
 
 **Problem 3: Oppdateringsanomalier**
 
 [Skriv ditt svar her - diskuter slette-, innsettings- og oppdateringsanomalier]
+
+Oppdateringsanomalier er problemer som oppstår når man forsøker å slette, endre og legge til data i en database. For eksempel med CSV-filen så vil å oppdatere E-posten til Ole Hansen lede til problemer når vi får forskjellige data for en person. Sletteanomalier oppstår når man skal slette data men ender opp med å slette annen informasjon som man vil beholde. Innsettningsanomalier kommer når man prøver å legge inn data men det oppstår feil fordi man mangler andre data som tabellen krever.
 
 **Fordeler med en indeks:**
 
