@@ -353,7 +353,7 @@ Hvis datamengden overstiger tilgjengelig minne i RAM må den dele oppgaven sin i
 
 **Datastrukturer i DBMS:**
 
-[Skriv ditt svar her - diskuter B+-tre og hash-indekser]
+b+-tre brukes nesten i alle moderne datasystemer som holder dataene sortert i et hierarkisk struktur. Strukturen gjør det effektivt med bruk av intervallsøk fordi dataene er sortert. Hash indekser brukes for å få raske svar på eksakte verdier med bruk av en Hash tabell. Forskjellen mellom de to er at det er enklere å bruke b+-tre når man sorterer mye data og kan bruke intervallsøk for å finne fram mens Hash-indekser er ment for å søke opp raskt eksakte verdier men mangler evnen til å håndtere sortering i data.
 
 ---
 
