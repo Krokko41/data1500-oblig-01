@@ -341,7 +341,7 @@ Oppdateringsanomalier er problemer som oppstår når man forsøker å slette, en
 
 [Skriv ditt svar her - forklar hvorfor en indeks ville gjort spørringen mer effektiv]
 
-Med en indeks ville gjort spørringen mer effektiv fordi da trenger den ikke lete over alle tabeller for å finne informasjonen. Da kan du kjøre ORDER BY for å gjøre det raskere. 
+Med en indeks ville gjort spørringen mer effektiv fordi da trenger den ikke lete over alle tabeller for å finne informasjonen. Hvis databasen for eksempel har en indeks i kolonnen fornavn kan man lettere finne fornavnet til personen man leter etter enn å gå gjennom alle kollonene.
 
 **Case 1: Indeks passer i RAM**
 
