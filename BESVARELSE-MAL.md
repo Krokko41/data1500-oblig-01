@@ -273,18 +273,11 @@ utleie.tid_start
 FROM utleie
 JOIN kunde ON utleie.kunde_id = kunde.id
 WHERE kunde.navn = current_user;
-
--- Gi kunden tilgang til å se denne visningen
 GRANT SELECT ON mine_utleier TO kunde;
-
-```sql
-[Skriv din SQL-kode for VIEW her]
-```
 
 **Ulempe med VIEW vs. POLICIES:**
 
-[Skriv ditt svar her - diskuter minst én ulempe med å bruke VIEW for autorisasjon sammenlignet med POLICIES]
-
+En ulempe med å bruke VIEW sammenlignet med POLICIES er at når du bruker VIEW til autorisasjon er sikkerheten ekstern. Sikkerheten bare ligger i visningen og ikke i dataene som POLICIES gjør
 ---
 
 ## Del 4: Analyse og Refleksjon
