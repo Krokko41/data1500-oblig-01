@@ -349,7 +349,7 @@ Når indeks passer inn i RAM kan databasen finne hvor dataene ligger veldig rask
 
 **Case 2: Indeks passer ikke i RAM**
 
-[Skriv ditt svar her - forklar hvordan flettesortering kan brukes]
+Hvis datamengden overstiger tilgjengelig minne i RAM må den dele oppgaven sin i mindre biter. Når en bit er ferdig blir den lagret midlertidlig som en fil i harddisken og RAM gjentar dette til den er ferdig med hele biten som denne prosessen kalles flettesortering. 
 
 **Datastrukturer i DBMS:**
 
