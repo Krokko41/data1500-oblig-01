@@ -1,8 +1,8 @@
 # Besvarelse - Refleksjon og Analyse
 
-**Student:** [Ditt navn]
+**Student:** Elias Aschim
 
-**Studentnummer:** [Ditt studentnummer]
+**Studentnummer:** 407719
 
 **Dato:** [Innleveringsdato]
 
