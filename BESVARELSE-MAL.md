@@ -344,9 +344,8 @@ Med en indeks ville gjort spørringen mer effektiv fordi da trenger den ikke let
 
 **Case 1: Indeks passer i RAM**
 
-Når indeks passer inn i RAM kan databasen finne hvor dataene ligger veldig raskt og effektivt. RAM leser mye raskere enn harddisker og passer godt når man vil ha rask respons i databasen som kalles an in-memory database(IMDB)
+Når indeks passer inn i RAM kan databasen finne hvor dataene ligger veldig raskt og effektivt. RAM leser mye raskere enn harddisker og passer godt når man vil ha rask respons i databasen som kalles an in-memory database(IMDB). Dette vil gjøre spørring i sykkeldatabasen veldig effektivt
 
-[Skriv ditt svar her - forklar hvordan indeksen fungerer når den passer i minnet]
 
 **Case 2: Indeks passer ikke i RAM**
 
