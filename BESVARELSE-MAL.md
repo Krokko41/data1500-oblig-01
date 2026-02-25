@@ -278,6 +278,7 @@ GRANT SELECT ON mine_utleier TO kunde;
 **Ulempe med VIEW vs. POLICIES:**
 
 En ulempe med å bruke VIEW sammenlignet med POLICIES er at når du bruker VIEW til autorisasjon er sikkerheten ekstern. Sikkerheten bare ligger i visningen og ikke i dataene som POLICIES gjør
+
 ---
 
 ## Del 4: Analyse og Refleksjon
