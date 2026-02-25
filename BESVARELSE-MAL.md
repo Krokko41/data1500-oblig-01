@@ -339,11 +339,12 @@ Oppdateringsanomalier er problemer som oppstår når man forsøker å slette, en
 
 **Fordeler med en indeks:**
 
-[Skriv ditt svar her - forklar hvorfor en indeks ville gjort spørringen mer effektiv]
 
 Med en indeks ville gjort spørringen mer effektiv fordi da trenger den ikke lete over alle tabeller for å finne informasjonen. Hvis databasen for eksempel har en indeks i kolonnen fornavn kan man lettere finne fornavnet til personen man leter etter enn å gå gjennom alle kollonene.
 
 **Case 1: Indeks passer i RAM**
+
+Når indeks passer inn i RAM kan databasen finne hvor dataene ligger veldig raskt og effektivt. RAM leser mye raskere enn harddisker og passer godt når man vil ha rask respons i databasen som kalles an in-memory database(IMDB)
 
 [Skriv ditt svar her - forklar hvordan indeksen fungerer når den passer i minnet]
 
