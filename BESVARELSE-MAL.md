@@ -308,12 +308,12 @@ Det blir totalt 121500 antall utleier per år
 
 **Estimat for lagringskapasitet:**
 
- 
-[Skriv din utregning her - vis hvordan du har beregnet lagringskapasiteten for hver tabell]
+
+Hver rad i utleie tabellen tar rundt 36 bytes å lagre. Når vi skal lagre dataene i hver tabell så blir det 20000 x 5 x 36 = 3 600 0000 bytes for høysesong. 5000 x 4 x 36 = 720 000 for mellomsesong og 500 x 3 x 36 = 54000 bytes for lavsesong.
 
 **Totalt for første år:**
 
-[Skriv ditt estimat her]
+Mitt estimat for første år etter vi har plusset alle tabellene sammen blir 4 3740 000 bytes eller 4.17 MB
 
 ---
 
