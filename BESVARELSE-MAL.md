@@ -400,7 +400,7 @@ Validering i databasen foregår med bruk av CONSTRAINTS, CHECK, NOT NUll osv. De
 
 **Konklusjon:**
 
-[Skriv ditt svar her - oppsummer hvor validering bør gjøres og hvorfor]
+Validering bør gjøres hos tre lag for å sikre dataintegritet og gi en god kundeopplevelse. Validering i nettleseren hindrer at enkle feil som glemt @ eller tastet noe feil i telefonnr havner i applikasjonslaget og skaper større trafikk. Applikasjonslaget håndterer kompleske logikk og passer på bare gyldig data kommer inn. Databasen går gjennom faste regler som går gjennom faste regler at informasjonen som blir lagret alltid skal være gyldig. 
 
 ---
 
