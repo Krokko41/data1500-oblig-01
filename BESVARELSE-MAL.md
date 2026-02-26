@@ -396,7 +396,7 @@ Her blir det gjort komplekse logikk prosesser som validerer at bare gyldig data 
 
 **Validering i databasen:**
 
-[Skriv ditt svar her - diskuter fordeler og ulemper]
+Validering i databasen foregår med bruk av CONSTRAINTS, CHECK, NOT NUll osv. Dette garanterer dataintegritet hvis det kommer feil i java koden eller ugyldig data inn i databasen. Det er viktig å ha ordentlig valideringssystem når man har kunder med forskjellige IDer som skal sjekkes hvor man må være sikker å gi riktig data til hver tabell. Ulempen er at databasen er lite fleksibel i å håndtere kompleks logikk som å sjekke eksterne systemer. 
 
 **Konklusjon:**
 
