@@ -1,6 +1,6 @@
 # Besvarelse - Refleksjon og Analyse
 
-**Student:** Elias Aschim
+**Student:** Elias Moreno Rueda Aschim
 
 **Studentnummer:** 407719
 
@@ -357,7 +357,6 @@ b+-tre brukes nesten i alle moderne datasystemer som holder dataene sortert i et
 ### Oppgave 4.3: Datastrukturer for logging
 
 **Foreslått datastruktur:**
-
 
 
 Jeg hadde valgt heap-fil fordi det har en rask måte å logge ny data på hvor man sjeldent trenger å gjennomføre lese-operasjoner
