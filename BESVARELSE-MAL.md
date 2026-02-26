@@ -410,17 +410,17 @@ Jeg har lært om forksjellige nøkler i SQL hvordan de oppretter relasjoner mell
 
 **Hvordan har denne oppgaven bidratt til å oppnå læringsmålene:**
 
-[Skriv din refleksjon her - koble oppgaven til læringsmålene i emnet]
+Gjennom oppgaven har jeg fortsått hvordan man oppretter databasen med hjelp av SQL som jeg har forstått hvilke komplekse logikker som skjer i databasen. Jeg har gjort rede for indekser, oppretter tabeller, brukere med bruk av SQL som har bidratt til at jeg lært mye om databaser. Gjennom spørsmål og skrive kode for oppgaven har det bidratt mye til at jeg har oppnåd læringsmålene. 
 
-Se oversikt over læringsmålene i en PDF-fil i Canvas https://oslomet.instructure.com/courses/33293/files/folder/Plan%20v%C3%A5ren%202026?preview=4370886
 
 **Hva var mest utfordrende:**
 
-[Skriv din refleksjon her - diskuter hvilke deler av oppgaven som var mest krevende]
+Det mest utfordrende for meg var å skrive SQL og starte sin egen database. Over oppgaven har det kommet forskjellige begreper som har ledet til at jeg har lest mye og reflektert hvordan det sammenhenger med andre begreper i databasen. Det har vært tidskrevende men har lært mye over perioden av å skrive denne oppgaven.
 
 **Hva har du lært om databasedesign:**
 
-[Skriv din refleksjon her - reflekter over prosessen med å designe en database fra bunnen av]
+Jeg har lært om hvordan data blir organisert i en databasen og hvilke strukturer og logikk som må til for å ha en database. Kunder som registerer seg med E-post og mobilnr så kommer data inn i databasen fra hva de har skrevet og blir brukt til å lage en profil av dem. Datainterigret og sikkerhet er også viktig når man har en database for å forhindre bugs og andre angrep på databasen.
+
 
 ---
 
