@@ -358,9 +358,7 @@ b+-tre brukes nesten i alle moderne datasystemer som holder dataene sortert i et
 
 **Foreslått datastruktur:**
 
-
 Jeg hadde valgt heap-fil fordi det har en rask måte å logge ny data på hvor man sjeldent trenger å gjennomføre lese-operasjoner
-
 
 
 **Begrunnelse:**
@@ -408,7 +406,7 @@ Validering bør gjøres hos tre lag for å sikre dataintegritet og gi en god kun
 
 **Hva har du lært så langt i emnet:**
 
-[Skriv din refleksjon her - diskuter sentrale konsepter du har lært]
+Jeg har lært om forksjellige nøkler i SQL hvordan de oppretter relasjoner mellom tabeller og dataintegritet. Lært hvordan indeks kan brukes for å navigere gjennom data og hvordan de forskjellige datastrukturene opererer. Hvordan datastrukturer gjennomfører skrive og leseoperasjoner og andre konsepter som jeg har lært om.
 
 **Hvordan har denne oppgaven bidratt til å oppnå læringsmålene:**
 
