@@ -48,7 +48,7 @@ FROM sykkel
 LEFT JOIN utleie ON sykkel.sykkel_id = utleie.sykkel_id
 WHERE utleie.utleie_id IS NULL;
 
-Oppgave 5.7
+Oppgave 5.8
 SELECT 
     s.sykkel_id, 
     s.type, 
