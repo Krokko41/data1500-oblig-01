@@ -4,8 +4,12 @@
 
 -- Kjør med: docker-compose exec postgres psql -h -U admin -d data1500_db -f test-scripts/queries.sql
 
-Oppgave5.1
+Oppgave 5.1
   SELECT * FROM sykkel;
+Oppgave 5.2
+SELECT etternavn, fornavn, mobilnummer 
+FROM kunde
+ORDER BY etternavn ASC;
 
 -- En test med en SQL-spørring mot metadata i PostgreSQL (kan slettes fra din script)
 select nspname as schema_name from pg_catalog.pg_namespace;
