@@ -383,15 +383,17 @@ Heap-fil er ikke ideelt for lese-operasjoner fordi hvis du skal finne en logg i 
 
 **Hvor bør validering gjøres:**
 
-[Skriv ditt svar her - argumenter for validering i ett eller flere lag]
+Validering bør gjøres i tre lag for å sikre dataintegritet imot bugs og ulovlige forespørsler. 
 
 **Validering i nettleseren:**
 
-[Skriv ditt svar her - diskuter fordeler og ulemper]
+Det er hensiktmessig å validere input fra brukeren med å sjekke at E-post og mobilnr er gyldig. Sjekke at @ i emailen er det og at mobilnr bare består av tall og starter på 4 eller 9 hvis det skulle være norske brukere. Ulemper med denne velidering i nettleseren er at det ikke er sikret imot cyberangrep fordi fokuset er på brukervennlighet. 
+
 
 **Validering i applikasjonslaget:**
 
-[Skriv ditt svar her - diskuter fordeler og ulemper]
+Her blir det gjort komplekse logikk prosesser som validerer at bare gyldig data kommer inn. Det blir gjort prosesser som om brukeren har gyldig e-post, mobilnr og andre regler som kreves for å lage en konto i databasen. Ulempen med å ha java og databasen som kommuniserer med hverandre er beskjedene som må sendes mellom java og databasen og gjør det tregere enn hvis databasen hadde gjort det selv. 
+
 
 **Validering i databasen:**
 
