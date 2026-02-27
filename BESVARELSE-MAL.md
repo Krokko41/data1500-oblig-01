@@ -4,7 +4,7 @@
 
 **Studentnummer:** 407719
 
-**Dato:** [Innleveringsdato]
+**Dato:** 27.02.26
 
 ---
 
