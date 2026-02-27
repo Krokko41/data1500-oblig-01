@@ -20,6 +20,8 @@ Kunder, utleid, sykkel og stasjon
 
 utlevert, levert, sted, tidsintervall, NULL, mobilnummer, epost, fornavn og etternavn.
 
+Attributter som epost, mobilnummer, fornavn og etternavn beskriver egenskaper til entitenen kunde fordi den inneholder nødvendig data om kunden for å kunne identifisere hver kunde. Attributtene som beskriver sykkel entiteten er NULL og tidsintervall. Disse attributtene gjør det nødvendig for å telle tidsintervall hvor lenge man har syklet og NULL for å sette tiden til 0. Stasjon entitenen har sted, utlevert og levert som sine attributter. Sted brukes for å finne hvilken stasjon som er der mens utlevert og levert brukes for å finne hvilke sykler har blitt utlevert eller levert fra og med stasjonen.
+
 
 
 ---
